@@ -1,0 +1,20 @@
+<dataset>
+  <table name="produtos">
+    <column>id</column>
+    <column>titulo</column>
+    <column>descricao</column>
+    <column>valor</column>
+    <row>
+      <value>1</value>
+      <value>Curso de PHPUnit</value>
+      <value>Aprenda a trabalhar com PHPUnit</value>
+      <value>56.99</value>
+    </row>
+    <row>
+      <value>2</value>
+      <value>Curso de JS</value>
+      <value>Aprenda a trabalhar com JS</value>
+      <value>36.99</value>
+    </row>
+  </table>
+</dataset>

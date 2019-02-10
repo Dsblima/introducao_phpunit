@@ -435,6 +435,61 @@
         ]
     },
     {
+        "name": "phpunit/dbunit",
+        "version": "4.0.0",
+        "version_normalized": "4.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/dbunit.git",
+            "reference": "e77b469c3962b5a563f09a2a989f1c9bd38b8615"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/dbunit/zipball/e77b469c3962b5a563f09a2a989f1c9bd38b8615",
+            "reference": "e77b469c3962b5a563f09a2a989f1c9bd38b8615",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "ext-simplexml": "*",
+            "php": "^7.1",
+            "phpunit/phpunit": "^7.0",
+            "symfony/yaml": "^3.0 || ^4.0"
+        },
+        "time": "2018-02-07T06:47:59+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de",
+                "role": "lead"
+            }
+        ],
+        "description": "PHPUnit extension for database interaction testing",
+        "homepage": "https://github.com/sebastianbergmann/dbunit/",
+        "keywords": [
+            "database",
+            "testing",
+            "xunit"
+        ],
+        "abandoned": true
+    },
+    {
         "name": "phpunit/php-code-coverage",
         "version": "6.1.4",
         "version_normalized": "6.1.4.0",
@@ -1429,6 +1484,67 @@
             "polyfill",
             "portable"
         ]
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v4.2.3",
+        "version_normalized": "4.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/yaml.git",
+            "reference": "d461670ee145092b7e2a56c1da7118f19cadadb0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/d461670ee145092b7e2a56c1da7118f19cadadb0",
+            "reference": "d461670ee145092b7e2a56c1da7118f19cadadb0",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "symfony/polyfill-ctype": "~1.8"
+        },
+        "conflict": {
+            "symfony/console": "<3.4"
+        },
+        "require-dev": {
+            "symfony/console": "~3.4|~4.0"
+        },
+        "suggest": {
+            "symfony/console": "For validating YAML files using the lint command"
+        },
+        "time": "2019-01-16T20:35:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Yaml\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "https://symfony.com"
     },
     {
         "name": "theseer/tokenizer",
