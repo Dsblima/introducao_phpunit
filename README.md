@@ -18,13 +18,13 @@
 `composer update`
 
 ## Intalar o phpunit
-*Executar o comando
+* Executar o comando
 
 `composer require --dev phpunit/phpunit ^7`
 
 * Criar no diretório principal do projeto o arquivo phpunit.xml e adicionar o código abaixo
 
-`<phpunit bootstrap="vendor/autoload.php">  
+`<phpunit bootstrap="vendor/autoload.php">
   <testsuites>
     <testsuite name="testes">
       <directory>tests</directory>
@@ -33,7 +33,7 @@
 </phpunit>`
 
 ## Testes em Banco de dados:
-*Executar o comando
+* Executar o comando
 `composer require --dev phpunit/dbunit`
 
 ## Executar o PHPUnit:
