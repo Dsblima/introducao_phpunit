@@ -9,6 +9,26 @@ class Calculadora
     private $operador;
     private $resultado;
     
+
+    public function getValorA()
+    {
+
+    }
+
+    public function getValorB()
+    {
+
+    }
+
+    public function getOperador()
+    {
+
+    }
+
+    public function getResultado()
+    {
+
+    }
 }
 
 ?>
