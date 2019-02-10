@@ -1,3 +1,0 @@
-<?
-echo "Criando repositório"; 
-?>

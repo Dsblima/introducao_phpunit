@@ -61,6 +61,15 @@ class CalculadoraTest extends TestCase
         $this->assertEquals(8,$calc->getResultado(),"Erro no método getResultado");        
 
     }
+
+    /**
+     * @depends testGetResultadoCalculadora
+     */
+    public function testStaticCalculadora()
+    {
+        $resultado = Calculadora::calcular(2,5,"soma");
+        $this->assertEquals(7,$resultado,"Erro no método estático calcular");
+    }
 }
 
 ?>
