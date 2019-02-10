@@ -34,7 +34,18 @@ class Calculadora
 
     public function getResultado()
     {
-
+        if($this->getOperador() == "soma"){
+            return $this->getValorA() + $this->getValorB(); 
+        }elseif($this->getOperador() == "subtracao"){
+            return $this->getValorA() - $this->getValorB(); 
+        }elseif($this->getOperador() == "multiplicacao"){
+            return $this->getValorA() * $this->getValorB();
+        }elseif($this->getOperador() == "divisao"){
+            if($this->getValorB() == 0){
+                return "Não é um número";
+            }
+            return $this->getValorA() / $this->getValorB();
+        }
     }
 }
 

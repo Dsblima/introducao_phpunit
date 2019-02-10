@@ -45,6 +45,22 @@ class CalculadoraTest extends TestCase
 
         
     }
+
+    /**
+     * @depends testConstrutorCalculadora
+     */
+    public function testGetResultadoCalculadora()
+    {
+        $calc = new Calculadora(4,2,"soma");
+        $this->assertEquals(6,$calc->getResultado(),"Erro no método getResultado");
+        $calc = new Calculadora(4,2,"subtracao");
+        $this->assertEquals(2,$calc->getResultado(),"Erro no método getResultado");
+        $calc = new Calculadora(4,2,"multiplicacao");
+        $this->assertEquals(8,$calc->getResultado(),"Erro no método getResultado");
+        $calc = new Calculadora(16,2,"divisao");
+        $this->assertEquals(8,$calc->getResultado(),"Erro no método getResultado");        
+
+    }
 }
 
 ?>
